@@ -1,0 +1,241 @@
+:root {
+    --color-bg: #050505;
+    --color-surface: #161616;
+    --color-surface-hover: #222222;
+    --color-text-main: #FFFFFF;
+    --color-text-muted: #A0A0A0;
+    --color-accent: #FF6B00;
+    --color-accent-hover: #FF8533;
+
+    --radius-btn: 14px;
+    --radius-card: 24px;
+
+    --font-brand: 'MuseoModerno', display;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: radial-gradient(circle at 50% -10%, #1a0f00 0%, #050505 50%);
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeIn 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 12px;
+}
+
+.brand-text {
+    font-family: var(--font-brand);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--color-text-main);
+    position: relative;
+    line-height: 1;
+}
+
+.brand-text::after {
+    content: '.';
+    color: var(--color-accent);
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 30%;
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-surface-hover);
+    padding: 4px;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+
+.tagline {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 14px 28px;
+    border-radius: var(--radius-btn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1), background-color 0.2s ease, box-shadow 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+    will-change: transform;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    transform: scale(1.04);
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--color-surface);
+    color: var(--color-text-main);
+    border: 1px solid #333;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-surface-hover);
+    border-color: #555;
+    transform: scale(1.04);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.card-link {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-card);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--color-text-main);
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-link:hover {
+    background-color: var(--color-surface-hover);
+    border-color: #333;
+    transform: scale(1.01);
+}
+
+.card-icon {
+    font-size: 28px;
+    color: var(--color-text-main);
+}
+
+.card-link:hover .card-icon {
+    color: var(--color-accent);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.card-desc {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+}
+
+.full-width {
+    grid-column: span 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    opacity: 0.4;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+    body {
+        align-items: flex-start;
+        padding: 40px 16px;
+    }
+
+    .brand-text {
+        font-size: 2rem;
+    }
+
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+
+    .btn {
+        flex: 1;
+        padding: 16px 20px;
+    }
+}
