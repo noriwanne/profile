@@ -4,5 +4,11 @@
     "description": "Plugin Description",
     "latest_version": "1.0.0",
     "download_url": "https://example.com/plugin.zip"
+  },
+  {
+    "name": "Plugin Na1me",
+    "description": "Plugin Descr2iption",
+    "latest_version": "1.03.0",
+    "download_url": "https://example1.com/plugin.zip"
   }
 ]
