@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Plugin Name",
+    "description": "Plugin Description",
+    "latest_version": "1.0.0",
+    "download_url": "https://example.com/plugin.zip"
+  }
+]
