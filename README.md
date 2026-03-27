@@ -1,3 +1,3 @@
 # profile
 My own website.
-View it live [here](https://norivane.de).
+View the live site at [norivane.de](https://norivane.de).
