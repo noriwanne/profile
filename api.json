@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "years": {
+      "value": "3+",
+      "label": "Jahre"
+    },
+    "projects": {
+      "value": "2",
+      "label": "Projekte"
+    },
+    "players": {
+      "value": "200+",
+      "label": "Von Spielern gespielt"
+    },
+    "partners": {
+      "value": "2",
+      "label": "Zufriedene Partner"
+    }
+  },
+
+  "experience": {
+    "title": "Meine Arbeit als Entwickler.",
+    "projects": [
+      {
+        "period": "Seit 2026",
+        "name": "Berryland Minecraft Netzwerk",
+        "status": "Aktiv",
+        "description": "Berryland ist ein Minecraft Netzwerk, an dem ich als Entwickler arbeite."
+      },
+      {
+        "period": "2025 - 2026",
+        "name": "woistjojo Community Server",
+        "status": "Beendet",
+        "description": "Der Community Server war ein großes SMP-Event des Streamers woistjojo. Es waren gleichzeitig über 200 Spieler auf der Lobby und auf dem SMP. Es war ein sehr tolles und spannendes Projekt, den Server auch mit so vielen Spielern online und lag-frei zu halten."
+      }
+    ]
+  }
+}
