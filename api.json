@@ -5,15 +5,15 @@
       "label": "Jahre"
     },
     "projects": {
-      "value": "2",
+      "value": "6",
       "label": "Projekte"
     },
     "players": {
-      "value": "200+",
-      "label": "Von Spielern gespielt"
+      "value": "350+",
+      "label": "Zufriedene Spieler"
     },
     "partners": {
-      "value": "2",
+      "value": "6",
       "label": "Zufriedene Partner"
     }
   },
@@ -22,16 +22,28 @@
     "title": "Meine Arbeit als Entwickler.",
     "projects": [
       {
+        "period": "Frühjahr 2026",
+        "name": "Berrylandia Minecraft Server",
+        "status": "Aktiv",
+        "description": "Berrylandia gehört zu Berryland und ist ein neuentwickelter SMP. Wir benutzen neue Ideen und Verhaltensweisen um den Spielern einen neuen Eindruck zu erschaffen. Berrylandia ist kein herkömmlicher SMP."
+      },
+      {
         "period": "Seit 2026",
         "name": "Berryland Minecraft Netzwerk",
         "status": "Aktiv",
         "description": "Berryland ist ein Minecraft Netzwerk, an dem ich als Entwickler arbeite."
       },
       {
+        "period": "August 2026",
+        "name": "Wohlgemerkt Challenge Server",
+        "status": "Beendet",
+        "description": "Der Challenge Server für Wohlgemerkt war ein riesen Erfolg. Er hatte über 50 InGame Zuschauer, während Wohlgemerkt und JoulesJules ein paar Challenges gespielt haben."
+      },
+      {
         "period": "2025 - 2026",
         "name": "woistjojo Community Server",
         "status": "Beendet",
-        "description": "Der Community Server war ein großes SMP-Event des Streamers woistjojo. Es waren gleichzeitig über 200 Spieler auf der Lobby und auf dem SMP. Es war ein sehr tolles und spannendes Projekt, den Server auch mit so vielen Spielern online und lag-frei zu halten."
+        "description": "Der Community Server war ein großes SMP-Event des Streamers woistjojo. Es waren gleichzeitig über 300 Spieler auf der Lobby und auf dem SMP. Es war ein sehr tolles und spannendes Projekt, den Server auch mit so vielen Spielern online und lag-frei zu halten."
       }
     ]
   }
